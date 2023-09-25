@@ -79,15 +79,15 @@ class Step_fetching_file:
     def step_fetch_file_from_web(self) -> None:
         """Creating folder of zip data"""
         self.utils_run.create_diretory(self.file_prop.get_zip_directory())
-        """fetching file"""
+        """Fetching file"""
         self.utils_run.fetching_file_with_wget(self.file_prop.url_file,f"{self.file_prop.get_zip_directory()}/{self.file_prop.get_file_name_all()}")
         """Creating folder of zip data"""
         self.utils_run.create_diretory(self.file_prop.get_extracted_directory())
-        """unzip file """
-        self.utils_run.unzip_file_csv(file_zip_path=
+        """ Unzip file """
+        self.utils_run.unzip_file_csv( file_zip_path=
                                       f'{self.file_prop.get_zip_directory()}/{self.file_prop.get_file_name_all()}',
-                                      extraction_ditrectory=self.file_prop.get_extracted_directory())
-        #process of deleting the other files in the path
+                                      extraction_ditrectory=self.file_prop.get_extracted_directory() )
+        """ Process of cleaning the extracted directorie """
         list_of_element = self.utils_run.list_of_files_and_directory(self.file_prop.get_extracted_directory())
         if len(list_of_element) > 1 :
             list_files,list_directories = self.utils_run.get_list_elements_(list_of_element,self.file_prop.get_extracted_directory())
