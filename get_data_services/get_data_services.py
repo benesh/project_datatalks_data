@@ -95,6 +95,12 @@ class Step_fetching_file:
             self.utils_run.remove_files(list_files,self.file_prop.get_extracted_directory())
             self.utils_run.remove_directories(list_directories,self.file_prop.get_extracted_directory())
 
+    def cleaning_directories(self,path_to_cleaning,file_name_toexclude) -> None:
+        pass
+    def fetching_file(self,url_file,path_to_store):
+        pass
+
+
 
 @dataclass
 class Steps_fetching_files:

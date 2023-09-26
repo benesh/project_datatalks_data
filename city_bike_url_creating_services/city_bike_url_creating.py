@@ -13,7 +13,6 @@ def url_creating_citi_bike(years_list:[int],interval_month:(int,int)):
                 url_file = f'https://s3.amazonaws.com/tripdata/{year}{start_month:02}-citibike-tripdata.zip'
             else:
                 url_file = f'https://s3.amazonaws.com/tripdata/{year}{start_month:02}-citibike-tripdata.csv.zip'
-
             file_name = f'{year}{start_month:02}-citibike-tripdata'
             file_extension= 'csv'
             file_zip_suffix = 'zip'
