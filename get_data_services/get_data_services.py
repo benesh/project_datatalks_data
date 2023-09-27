@@ -4,6 +4,7 @@ import shutil
 from dataclasses import dataclass
 from zipfile import ZipFile
 from get_data_services.settings import WORDIR_DATA_ZIP_PATH,WORDIR_DATA_EXTRACTED_PATH
+from prefect import flow,task
 
 @dataclass
 class File_properties:
@@ -76,6 +77,7 @@ class Utils_methods:
 class Step_fetching_file:
     file_prop : File_properties
     utils_run : Utils_methods
+    @flow(name="fetching_unzip_cleaning_data",log_prints=True,retries=3)
     def step_fetch_file_from_web(self) -> None:
         """Creating folder of zip data"""
         self.utils_run.create_diretory(self.file_prop.get_zip_directory())
@@ -94,9 +96,10 @@ class Step_fetching_file:
             list_files = self.utils_run.retiring_csv_file(extension_to_exclude=self.file_prop.file_extension,list_files=list_files)
             self.utils_run.remove_files(list_files,self.file_prop.get_extracted_directory())
             self.utils_run.remove_directories(list_directories,self.file_prop.get_extracted_directory())
-
+    @task(name="cleaning_data_directory")
     def cleaning_directories(self,path_to_cleaning,file_name_toexclude) -> None:
         pass
+    @task(name="fetching_data")
     def fetching_file(self,url_file,path_to_store):
         pass
 
