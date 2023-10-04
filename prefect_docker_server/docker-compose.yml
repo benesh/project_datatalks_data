@@ -31,7 +31,7 @@ services:
     image: prefecthq/prefect:2.11.5-python3.11
     restart: always
     volumes:
-      - prefect:/root/.prefect
+      - ./prefect:/root/.prefect
     entrypoint: ["/opt/prefect/entrypoint.sh", "prefect", "server", "start"]
     environment:
       - PREFECT_UI_URL=http://127.0.0.1:4200/api

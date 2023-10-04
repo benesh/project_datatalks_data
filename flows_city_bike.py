@@ -1,4 +1,5 @@
-from get_data_services.flow_task_get_data_services import File_properties , run_steps_fetching
+from get_data_services.flow_task_get_data_services import run_steps_fetching
+from classes_models_services.files_info_classes import File_properties
 from prefect import flow
 
 @flow(name="LANCHING NY BIKE FILES FETCHING ")
@@ -26,6 +27,6 @@ def url_creating_citi_bike(years_list,interval_month):
     run_steps_fetching(file_props)
 
 if __name__=='__main__':
-    year = [2023]
-    month = (1,6)
+    year = [2013]
+    month = (7,9)
     url_creating_citi_bike(year, month)
