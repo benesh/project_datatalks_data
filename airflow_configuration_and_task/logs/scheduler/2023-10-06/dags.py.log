@@ -1,0 +1,196 @@
+[2023-10-06T09:10:55.820+0000] {processor.py:157} INFO - Started process (PID=4311) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:10:55.820+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:10:55.822+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:10:55.822+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:10:55.831+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:10:55.830+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:10:55.831+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:10:55.849+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.032 seconds
+[2023-10-06T09:11:26.234+0000] {processor.py:157} INFO - Started process (PID=4366) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:11:26.234+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:11:26.236+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:11:26.236+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:11:26.243+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:11:26.243+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:11:26.244+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:11:26.260+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.030 seconds
+[2023-10-06T09:11:56.704+0000] {processor.py:157} INFO - Started process (PID=4422) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:11:56.705+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:11:56.707+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:11:56.706+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:11:56.714+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:11:56.713+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:11:56.715+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:11:56.732+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:12:27.252+0000] {processor.py:157} INFO - Started process (PID=4477) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:12:27.254+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:12:27.255+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:12:27.255+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:12:27.263+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:12:27.262+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:12:27.263+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:12:27.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.030 seconds
+[2023-10-06T09:12:57.815+0000] {processor.py:157} INFO - Started process (PID=4532) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:12:57.816+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:12:57.818+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:12:57.818+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:12:57.825+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:12:57.825+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:12:57.826+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:12:57.843+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:13:28.399+0000] {processor.py:157} INFO - Started process (PID=4587) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:13:28.400+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:13:28.402+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:13:28.402+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:13:28.409+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:13:28.408+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:13:28.409+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:13:28.426+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.030 seconds
+[2023-10-06T09:13:58.990+0000] {processor.py:157} INFO - Started process (PID=4642) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:13:58.992+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:13:58.993+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:13:58.993+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:13:59.000+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:13:59.000+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:13:59.001+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:13:59.017+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.030 seconds
+[2023-10-06T09:14:29.589+0000] {processor.py:157} INFO - Started process (PID=4697) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:14:29.590+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:14:29.592+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:14:29.592+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:14:29.599+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:14:29.598+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:14:29.600+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:14:29.617+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:14:59.832+0000] {processor.py:157} INFO - Started process (PID=4752) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:14:59.834+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:14:59.836+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:14:59.835+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:14:59.843+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:14:59.842+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:14:59.843+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:14:59.861+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:15:30.365+0000] {processor.py:157} INFO - Started process (PID=4807) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:15:30.366+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:15:30.368+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:15:30.367+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:15:30.375+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:15:30.375+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:15:30.376+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:15:30.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:16:00.845+0000] {processor.py:157} INFO - Started process (PID=4862) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:16:00.846+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:16:00.848+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:16:00.847+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:16:00.855+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:16:00.855+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:16:00.856+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:16:00.872+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:16:31.224+0000] {processor.py:157} INFO - Started process (PID=4917) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:16:31.226+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:16:31.228+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:16:31.228+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:16:31.236+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:16:31.235+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:16:31.236+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:16:31.259+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.038 seconds
+[2023-10-06T09:17:01.884+0000] {processor.py:157} INFO - Started process (PID=4972) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:17:01.886+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:17:01.888+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:17:01.888+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:17:01.895+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:17:01.894+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:17:01.895+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:17:01.912+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds
+[2023-10-06T09:17:32.476+0000] {processor.py:157} INFO - Started process (PID=5027) to work on /opt/airflow/dags/dags.py
+[2023-10-06T09:17:32.476+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2023-10-06T09:17:32.478+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:17:32.478+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2023-10-06T09:17:32.485+0000] {logging_mixin.py:151} INFO - [2023-10-06T09:17:32.485+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/dags.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dags.py", line 51, in <module>
+    training_model_tasks >> choose_best_model >> [is_accurate, is_inaccurate]
+NameError: name 'is_accurate' is not defined
+[2023-10-06T09:17:32.486+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dags.py
+[2023-10-06T09:17:32.504+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dags.py took 0.031 seconds

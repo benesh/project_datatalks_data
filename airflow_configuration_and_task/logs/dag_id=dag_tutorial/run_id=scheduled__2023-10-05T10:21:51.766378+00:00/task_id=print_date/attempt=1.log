@@ -1,0 +1,17 @@
+[2023-10-06T10:22:20.428+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_tutorial.print_date scheduled__2023-10-05T10:21:51.766378+00:00 [queued]>
+[2023-10-06T10:22:20.438+0000] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_tutorial.print_date scheduled__2023-10-05T10:21:51.766378+00:00 [queued]>
+[2023-10-06T10:22:20.439+0000] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2023-10-06T10:22:20.457+0000] {taskinstance.py:1380} INFO - Executing <Task(BashOperator): print_date> on 2023-10-05 10:21:51.766378+00:00
+[2023-10-06T10:22:20.464+0000] {standard_task_runner.py:57} INFO - Started process 1795 to run task
+[2023-10-06T10:22:20.469+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_tutorial', 'print_date', 'scheduled__2023-10-05T10:21:51.766378+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/dags_internet_tuto.py', '--cfg-path', '/tmp/tmpskylblgx']
+[2023-10-06T10:22:20.473+0000] {standard_task_runner.py:85} INFO - Job 19: Subtask print_date
+[2023-10-06T10:22:20.538+0000] {task_command.py:415} INFO - Running <TaskInstance: dag_tutorial.print_date scheduled__2023-10-05T10:21:51.766378+00:00 [running]> on host 49d3e728408a
+[2023-10-06T10:22:20.633+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_tutorial' AIRFLOW_CTX_TASK_ID='print_date' AIRFLOW_CTX_EXECUTION_DATE='2023-10-05T10:21:51.766378+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-10-05T10:21:51.766378+00:00'
+[2023-10-06T10:22:20.635+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-10-06T10:22:20.635+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'date']
+[2023-10-06T10:22:20.649+0000] {subprocess.py:86} INFO - Output:
+[2023-10-06T10:22:20.652+0000] {subprocess.py:93} INFO - Fri Oct  6 10:22:20 UTC 2023
+[2023-10-06T10:22:20.653+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-10-06T10:22:20.684+0000] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=dag_tutorial, task_id=print_date, execution_date=20231005T102151, start_date=20231006T102220, end_date=20231006T102220
+[2023-10-06T10:22:20.722+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-06T10:22:20.751+0000] {taskinstance.py:2776} INFO - 2 downstream tasks scheduled from follow-on schedule check

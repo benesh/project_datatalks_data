@@ -1,3 +1,7 @@
 .idea
 volumes_docker_compose/
 **/__pycache__/*
+<<<<<<< HEAD
+prefect_docker_server/
+=======
+>>>>>>> master
