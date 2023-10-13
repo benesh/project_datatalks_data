@@ -33,7 +33,7 @@ services:
     working_dir: "/root/flows"
     volumes:
       - ./volumes_docker_compose/prefect:/root/.prefect
-      - .:/root/flows
+      - ./prefect_flows_part:/root/flows
     entrypoint: ["/opt/prefect/entrypoint.sh", "prefect", "server", "start"]
     environment:
       - PREFECT_UI_URL=http://127.0.0.1:4200/api
@@ -88,6 +88,8 @@ services:
       - SPARK_USER=spark
     ports:
       - '8080:8080'
+    profiles: [ "server-spark" ]
+
   spark-worker-1:
     image: docker.io/bitnami/spark:3.5
     environment:
@@ -100,7 +102,7 @@ services:
       - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
       - SPARK_SSL_ENABLED=no
       - SPARK_USER=spark
-    profiles: [ "server" ]
+    profiles: [ "server-spark" ]
 
 
   spark-worker-2:
@@ -115,7 +117,7 @@ services:
       - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
       - SPARK_SSL_ENABLED=no
       - SPARK_USER=spark
-    profiles: [ "server" ]
+    profiles: [ "server-spark" ]
 
 volumes:
   prefect:
