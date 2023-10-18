@@ -7,7 +7,7 @@ from prefect_flows_2.classes_models_services.files_info_classes import FilePrope
 from prefect_flows_2.classes_models_services.settings import *
 from prefect import task,flow
 import logging
-from datetime import date
+import time
 
 sys.path.insert(0, '/home/benomar/workspace/project_datatalks_data/prefect_flows_2/classes_models_services')
 
@@ -118,12 +118,13 @@ def run_steps_fetching(file_props) -> None:
     list_of_file_props = []
     for file_prop in file_props:
         step_fetch_file_from_web(file_prop)
-        list_of_file_props.append(json.dumps(file_prop.toJSON(),indent=4))
-    print(list_of_file_props)
+        list_of_file_props.append(file_prop.toJSON())
+    jsonfile = json.dumps(list_of_file_props)
     #get the date
-    today = date.today()
-    d4 = today.strftime("%b-%d-%Y")
-    file_path = f'{METADATA_DIR}/{d4}_metadata_execution.json'
+    seconds = time.time()
+    tempt = time.localtime(seconds)
+    file_name = f"metadata_execution_{tempt.tm_year}-{tempt.tm_mon}{tempt.tm_mday}-T-{tempt.tm_hour}-{tempt.tm_min}-{tempt.tm_sec}"
+    file_path = f"{METADATA_DIR}/{file_name}.json"
     # Writing to sample.json
     with open(file_path, "w") as outfile:
-        outfile.write(list_of_file_props)
+        outfile.write(jsonfile)

@@ -1,3 +1,5 @@
+import json
+
 from prefect_flows_2.get_data_services.task_get_data_services import run_steps_fetching
 from prefect_flows_2.classes_models_services.files_info_classes import FileProperties
 from prefect import flow
@@ -44,10 +46,3 @@ if __name__=='__main__':
     year = [2013]
     month = (7,8)
     url_creating_citi_bike(year, month)
-
-    logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
-    logging.debug('This message should go to the log file')
-    logging.info('So should this')
-    logging.warning('And this, too')
-    logging.error('And non-ASCII stuff, too, like Øresund and Malmö')
-
