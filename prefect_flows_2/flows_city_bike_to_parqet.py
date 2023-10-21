@@ -80,7 +80,6 @@ if __name__=='__main__':
     file_extension_c ='zip'
     file_extension_d ='csv'
 
-                #FileProperties(url_file,file_name,file_extension_c,file_extension_d,year,start_month,columns_to_renanmes,columns_to_cast_as_times)
     file1_prop = FileProperties(url_file,file_name,file_extension_c,file_extension_d,year,f'{month:02}',schema_redefine,columns_time)
 
     data_transfrom_city_bike_flow(file1_prop,columns_time,get_columns_renamed())
