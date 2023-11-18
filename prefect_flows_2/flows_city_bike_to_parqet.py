@@ -34,7 +34,6 @@ def data_transfrom_city_bike_flow(file_prop: FileProperties, columns_time_to_cas
     df = reading_file_from_csv( file_path_unpacked)
     df = renaming_columns(df, file_prop.columns_to_renanmes)
     df = cast_column_to_datetime(df, columns_time_to_cast)
-    #df = droping_columns(df,columns_to_drop)
     writing_datafram_into_parquets(df, file_prop)
 def get_columns_renamed():
     schema_redefine = {
@@ -83,9 +82,3 @@ if __name__=='__main__':
     file1_prop = FileProperties(url_file,file_name,file_extension_c,file_extension_d,year,f'{month:02}',schema_redefine,columns_time)
 
     data_transfrom_city_bike_flow(file1_prop,columns_time,get_columns_renamed())
-
-    logging.basicConfig(filename='/home/benomar/workspace/project_datatalks_data/prefect_flows_2/example.log', encoding='utf-8', level=logging.DEBUG)
-    logging.debug('This message should go to the log file')
-    logging.info('So should this')
-    logging.warning('And this, too')
-    logging.error('And non-ASCII stuff, too, like Øresund and Malmö')

@@ -9,8 +9,6 @@ from prefect import task,flow
 import logging
 import time
 
-sys.path.insert(0, '/home/benomar/workspace/project_datatalks_data/prefect_flows_2/classes_models_services')
-
 def get_name_file_with_given_extension(path,extesnion) -> str :
     elements = os.listdir(path)
     for elem in  elements:

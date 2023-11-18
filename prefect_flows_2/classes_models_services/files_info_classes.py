@@ -1,6 +1,8 @@
 from enum import Enum
 import json
 from prefect_flows_2.classes_models_services.settings import *
+from pydantic import dataclasses
+
 class StatusFile(Enum):
     TO_DOWNLOAD = 1
     ERROR_DOWNLODING = 2

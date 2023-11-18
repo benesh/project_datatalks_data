@@ -6,7 +6,7 @@ from prefect import flow
 import logging
 
 
-@flow(name="LANCHING NY BIKE FILES FETCHING")
+@flow(name="LUNCHING NY BIKE FILES FETCHING")
 def url_creating_citi_bike(years_list,interval_month):
     print(years_list,interval_month)
     start_month= interval_month[0]
@@ -40,9 +40,7 @@ def url_creating_citi_bike(years_list,interval_month):
             start_month += 1
     run_steps_fetching(file_props)
 
-
 if __name__=='__main__':
-
     year = [2013]
     month = (7,8)
     url_creating_citi_bike(year, month)
