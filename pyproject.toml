@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 prefect = "2.14.5"
+minio = "^7.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
